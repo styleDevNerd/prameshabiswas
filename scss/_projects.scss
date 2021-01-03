@@ -1,0 +1,131 @@
+@import 'config';
+
+// Container
+.container-projects {
+  position: relative;
+  margin: auto;
+  margin-top: 8%;
+  width:  1100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 30px 10px; 
+}
+// Cards
+.container-projects .card {
+  position: relative;
+  max-width: 300px;
+  height: 120px;
+  margin: 30px 10px;
+  padding: 20px 15px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px 10px 50px 50px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.5);
+  transition: 0.3s ease-in-out;
+}
+// Cards Hover Effect
+.container-projects .card:hover {
+  height: 380px;
+}
+.container-projects .card-one:hover {
+  background: $pastel-violet;
+  border: 6px solid $pastel-violet;
+}
+.container-projects .card-two:hover {
+  background: $pastel-green;
+}
+.container-projects .card-three:hover {
+  background: $pastel-peach;
+}
+.container-projects .card-four:hover {
+  background: $headphone;
+}
+// Card Imagebox
+.container-projects .card .imgbox {
+  position: relative;
+  width: 265px;
+  height: 180px;
+  top: -60px;
+  left: 17px;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  background: $bg-none;
+}
+// Image in Imagebox
+.container-projects .card .imgbox img {
+  max-width: 100%;
+  max-height: 160px;
+  border-radius: 50px 50px 10px 10px;
+  z-index: 1;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+}
+.card-one-img {
+  border: 6px solid $pastel-violet;
+}
+.card-two-img {
+  border: 6px solid $pastel-green;
+}
+.card-three-img {
+  border: 6px solid $pastel-peach;
+}
+.card-four-img {
+  border: 6px solid $headphone;
+}
+// Card Contents
+.container-projects .card .content-projects {
+  position: relative;
+  margin-top: -140px;
+  margin-bottom: 20px;
+  padding: 10px 15px;
+  text-align: justify;
+  color: $black-color;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.25s ease-in-out;
+}
+.content-projects h2 {
+  text-align: center;
+  font-size: 20px;
+}
+// Icons inside Contents
+.container-projects .card .content-projects .links {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 30%;
+}
+.container-projects .card .content-projects .links a {
+  text-decoration: none;
+  font-weight: bold;
+}
+.container-projects .card .content-projects .links .fa-github-square,
+.container-projects .card .content-projects .links .fa-chrome {
+  color: $tomato-red;
+  font-size: 2.2rem;
+}
+// Card Hover Effect on Contents
+.container-projects .card:hover .content-projects {
+  visibility: visible;
+  opacity: 1;
+  margin-top: -70px;
+  transition-delay: 0.3s;
+}
+// Custom Scrollbar
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px rgba(255, 255, 255, 0.05); 
+  border-radius: 20px;
+}
+::-webkit-scrollbar-thumb {
+  background: $tomato-red; 
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: $tomato-red; 
+}

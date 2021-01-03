@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Darker+Grotesque&family=Fredericka+the+Great&family=Secular+One&display=swap");
+.box {
+  position: relative;
+  margin: auto;
+  margin-top: 10%;
+  z-index: 2;
+  width: 1100px;
+  height: 450px;
+  margin-bottom: 5%;
+  border-radius: 10px;
+  background: #000;
+  opacity: 0.8;
+}
+
+.header {
+  position: absolute;
+  width: 100%;
+  height: 10%;
+  border-radius: 9px 9px 0 0;
+}
+
+.circle {
+  position: absolute;
+  width: 2.8%;
+  height: 60%;
+  top: 22%;
+  border-radius: 50%;
+}
+
+.one-circle {
+  background: #ff5e53;
+  left: 3%;
+}
+
+.two-circle {
+  background: #f6c225;
+  left: 7%;
+}
+
+.three-circle {
+  background: #28c842;
+  left: 11%;
+}
+
+pre {
+  position: absolute;
+  font-size: 1.3rem;
+  top: 9.2%;
+  left: -7%;
+  color: #404040;
+  overflow-x: auto;
+  color: white;
+  padding: 2px 5px;
+}
+
+.pre-defined {
+  color: #57d5e2;
+}
+
+.user-defined {
+  color: #94d62c;
+}
+
+.data {
+  color: #dbd269;
+}
+
+.syntax {
+  color: #f42667;
+}
+
+.line-number {
+  color: #404040;
+}
+/*# sourceMappingURL=i.css.map */
