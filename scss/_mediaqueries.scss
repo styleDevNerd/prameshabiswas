@@ -1,0 +1,50 @@
+@import 'config';
+
+/* Extra small devices (phones, 600px and down) */
+// @media only screen and (max-width: 640px) {
+//   nav .logo {
+//     width: 30%;
+//     align-content: flex-start;
+//     top: 0;
+//     left: 0;
+//   }
+//   nav a {
+//     visibility: hidden;
+//   }
+//   .container {
+//     flex-direction: row;
+//     flex-wrap: wrap;
+//   }
+//   .left {
+//     width: 100%;
+//     padding-right: 5%;
+//     // font-size: 2rem;
+//     // margin-left: -12%;
+//     // font-size: 3rem;
+//   }
+//   .special {
+//     font-size: 8%;
+//   }
+//   .one-liner {
+//     font-size: 5%;
+//   }
+// }
+
+// /* Small devices (portrait tablets and large phones, 600px and up) */
+// @media only screen and (min-width: 600px) {...}
+
+// /* Medium devices (landscape tablets, 768px and up) */
+// @media only screen and (min-width: 768px) {...}
+
+// /* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 1366px) {
+  .myname {
+    margin-bottom: 20%;
+  }
+  h4 {
+    font-size: 1.4rem;
+  }
+}
+
+// /* Extra large devices (large laptops and desktops, 1200px and up) */
+// @media only screen and (min-width: 1200px) {...}
