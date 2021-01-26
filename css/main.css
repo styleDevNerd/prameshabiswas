@@ -323,8 +323,10 @@
   background-size: 100px 200px;
   border-radius: 5px;
   border: 5px solid #222831;
-  -webkit-animation: rotateIn 2s forwards;
-          animation: rotateIn 2s forwards;
+  -webkit-animation: rotateIn
+ 2s forwards;
+          animation: rotateIn
+ 2s forwards;
 }
 
 .laptop {
@@ -337,8 +339,10 @@
   top: 62%;
   left: 35%;
   z-index: 4;
-  -webkit-animation: slideInUp 2.2s forwards;
-          animation: slideInUp 2.2s forwards;
+  -webkit-animation: slideInUp
+ 2.2s forwards;
+          animation: slideInUp
+ 2.2s forwards;
 }
 
 .laptop:after {
@@ -363,8 +367,10 @@
   top: 100%;
   left: 0.2%;
   z-index: 4;
-  -webkit-animation: slideInUp 2.2s forwards;
-          animation: slideInUp 2.2s forwards;
+  -webkit-animation: slideInUp
+ 2.2s forwards;
+          animation: slideInUp
+ 2.2s forwards;
 }
 
 .laptop-stand:after {
@@ -403,8 +409,10 @@
   top: 73%;
   left: 15%;
   z-index: 3;
-  -webkit-animation: zoomInUp 2.5s forwards;
-          animation: zoomInUp 2.5s forwards;
+  -webkit-animation: zoomInUp
+ 2.5s forwards;
+          animation: zoomInUp
+ 2.5s forwards;
 }
 
 .cup:after {
@@ -438,8 +446,10 @@
   background: #caabd8;
   top: 71%;
   left: 14.5%;
-  -webkit-animation: zoomInUp 2.5s forwards;
-          animation: zoomInUp 2.5s forwards;
+  -webkit-animation: zoomInUp
+ 2.5s forwards;
+          animation: zoomInUp
+ 2.5s forwards;
 }
 
 .cup-top-bump {
@@ -451,8 +461,10 @@
   background: #caabd8;
   top: 69.3%;
   left: 16.5%;
-  -webkit-animation: zoomInUp 2.5s forwards;
-          animation: zoomInUp 2.5s forwards;
+  -webkit-animation: zoomInUp
+ 2.5s forwards;
+          animation: zoomInUp
+ 2.5s forwards;
 }
 
 .me {
@@ -463,8 +475,10 @@
   left: 23%;
   background: none;
   z-index: 3;
-  -webkit-animation: slideInDown 4.5s forwards;
-          animation: slideInDown 4.5s forwards;
+  -webkit-animation: slideInDown
+ 4.5s forwards;
+          animation: slideInDown
+ 4.5s forwards;
 }
 
 .face {
@@ -776,8 +790,10 @@
   right: 12%;
   border-radius: 20px 5px 5px 20px;
   border: 1.5px solid #000;
-  -webkit-animation: lightSpeedInRight 3s forwards;
-          animation: lightSpeedInRight 3s forwards;
+  -webkit-animation: lightSpeedInRight
+ 3s forwards;
+          animation: lightSpeedInRight
+ 3s forwards;
 }
 
 .mobile {
@@ -790,8 +806,10 @@
   right: 18%;
   border-radius: 10px 10px 20px 20px;
   border: 1px solid #000;
-  -webkit-animation: lightSpeedInRight 3s forwards;
-          animation: lightSpeedInRight 3s forwards;
+  -webkit-animation: lightSpeedInRight
+ 3s forwards;
+          animation: lightSpeedInRight
+ 3s forwards;
 }
 
 .small-circle {
@@ -1814,7 +1832,7 @@ h4 {
 footer {
   position: absolute;
   position: fixed;
-  right: -5%;
+  right: -6.5%;
   bottom: 24%;
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
