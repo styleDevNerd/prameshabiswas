@@ -1,0 +1,58 @@
+@import 'config';
+@import 'aboutcomponent';
+
+.container-about {
+  width: 100vw;
+  height: 100vh;
+  background: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  // Left section
+  .left-about {
+      flex: 1;
+  }
+  // Right Section
+  .right-about {
+      flex: 1;
+  }
+}
+// Introduction part inside Right Section
+.intro {
+  position: relative;
+  width: 90%;
+  height: 50%;
+  top: 15%;
+  margin-left: -5%;
+  margin-right: 5%;
+
+  p {
+    margin-top: 0;
+    color: color-about(text-color);
+    font-size: 1.2rem;
+    font-weight: 550;
+    font-family: $text-style-five;
+  }
+}
+// Skill icons
+.skills {
+  font-size: 55px;
+  color: color-all(pastel-light-red);
+}
+.fa-html5:hover,
+.fa-css3-alt:hover,
+.fa-js-square:hover,
+.fa-git-alt:hover,
+.fa-node:hover,
+.fa-sass:hover,
+.fa-bootstrap:hover {
+  transform: scale(1.3) rotate(10deg);
+  color: color-main(headphone);
+}
+// First Letter-H of paragraph
+.letter-h {
+  font-family: $text-style-two;
+  color: color-all(pastel-violet);
+  font-size: 2.2rem;
+}

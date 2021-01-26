@@ -1,0 +1,364 @@
+@import 'config';
+
+// Section Inside COntainer
+.contact-section {
+  position: relative;
+  margin: auto;
+  margin-top: 8%;
+  margin-bottom: 2%;
+  width: 1240px;
+  height: 530px;
+  background: color-all(bg-none);
+}
+// Loading Effect
+.loading {
+  position: absolute;
+  width: 38%;
+  height: 4%;
+  z-index: 1;
+  left: 34%;
+  top: 54%;
+  background: color-all(bg-none);
+  border-radius: 50px;
+}
+.c-load {
+  position: absolute;
+  width: 4.4%;
+  height: 100%;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.l-one {
+  background: color-all(pastel-green);
+  left: 0%;
+  animation: loading 1s ease infinite alternate;
+}
+.l-two {
+  background: color-all(pastel-light-red);
+  left: 8%;
+  animation: loading 1.2s ease infinite alternate;
+}
+.l-three {
+  background: color-all(pastel-violet);
+  left: 16%;
+  animation: loading 1.4s ease infinite alternate;
+}
+.l-four {
+  background: color-all(pastel-peach);
+  left: 24%;
+  animation: loading 1.6s ease infinite alternate;
+}
+.l-five {
+  background: color-all(pastel-green);
+  left: 32%;
+  animation: loading 1.8s ease infinite alternate;
+}
+.l-six {
+  background: color-all(pastel-light-red);
+  left: 40%;
+  animation: loading 2s ease infinite alternate;
+}
+.l-seven {
+  background: color-all(pastel-violet);
+  left: 48%;
+  animation: loading 2.2s ease infinite alternate;
+}
+.l-eight {
+  background: color-all(pastel-peach);
+  left: 56%;
+  animation: loading 2.4s ease infinite alternate;
+}
+.l-nine {
+  background: color-all(pastel-green);
+  left: 64%;
+  animation: loading 2.6s ease infinite alternate;
+}
+.l-ten {
+  background: color-all(pastel-light-red);
+  left: 72%;
+  animation: loading 2.8s ease infinite alternate;
+}
+.l-eleven {
+  background: color-all(pastel-violet);
+  left: 80%;
+  animation: loading 3s ease infinite alternate;
+}
+.l-twelve {
+  background: color-all(pastel-peach);
+  left: 88%;
+  animation: loading 3.2s ease infinite alternate;
+}
+// Profile Pic Photo/Outlines
+.profile-outline-two {
+  position: absolute;
+  width: 32.5%;
+  height: 74.5%;
+  top: 15%;
+  left: -.5%;
+  z-index: 2;
+  border-radius: 50%;
+  border: 6px double color-contact(border-circle);
+  background: color-all(bg-none);
+  animation: rotate 1s ease infinite;
+}
+.profile-outline {
+  position: absolute;
+  width: 30%;
+  height: 69%;
+  top: 18%;
+  left: 0.8%;
+  z-index: 2;
+  border-radius: 50%;
+  border: 5px dashed color-contact(border-circle);
+  background: color-all(bg-none);
+  animation: rotate 1s ease infinite;
+}
+.profile-pic {
+  position: absolute;
+  width: 28%;
+  height: 65%;
+  top: 21%;
+  left: 2.2%;
+  z-index: -2;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
+  background-image: url('/img/profile-pic.jpg');
+  background-position: center;
+  background-size: 380px 380px;
+}
+// Mobile 
+.mobile-full {
+  position: absolute;
+  width: 30%;
+  height: 100%;
+  right: 1%;
+  top: 0%;
+  z-index: 2;
+  background: color-all(bg-none);
+}
+.my-mobile {
+  position: absolute;
+  width: 78%;
+  height: 100%;
+  background: color-contact(my-mobile);
+  left: 13%;
+  top: 0%;
+  z-index: 1;
+  border-radius: 25px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
+  border: 1px solid color-all(black-color);
+}
+.curve {
+  position: absolute;
+  top: -4.7%;
+  left: 43%;
+  width: 14%;
+  height: 12%;
+  background:  color-contact(my-mobile);
+  -webkit-clip-path: polygon(0% 0%, 100% 100%, 0% 100%);
+  clip-path: polygon(0% 0%, 100% 100%, 0% 100%);
+  transform: rotate(-59deg);
+  border-radius: 1em 1em 1em 3em;
+  z-index: 2;
+}
+.curve-copy {
+  position: absolute;
+  top: -4.7%;
+  left: 47%;
+  width: 14%;
+  height: 12%;
+  background:  color-contact(my-mobile);
+  -webkit-clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+  clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+  transform: rotate(59deg);
+  border-radius: 1em 1em 3em 1em;
+  z-index: 2;
+}
+.front-camera {
+  position: absolute;
+  width: 6%;
+  height: 3%;
+  top: 1%;
+  left: 48%;
+  border-radius: 50%;
+  background: color-contact(camera);
+  z-index: 2;
+  border: 1px solid color-all(black-color);
+}
+//Mobile Inner Layer
+.inner-layer {
+  position: absolute;
+  width: 94%;
+  height: 95.8%;
+  background-image: url('https://i.pinimg.com/originals/f4/a7/44/f4a7445edb5d0d7e539ffc1e2e945d26.png');
+  background-position: center;
+  background-origin: fill;
+  background-repeat: no-repeat;
+  background-size: 280px 600px;
+  left: 3%;
+  top: 2%;
+  border-radius: 25px;
+}
+.time:before {
+  position: absolute;
+  content: '12:07';
+  color: color-all(white-color);
+  font-family: $text-style-mobile;
+  font-size: 10px;
+  left: 6%;
+  top: 0.5%;
+}
+.battery:before {
+  position: absolute;
+  content: '100%';
+  color: color-all(white-color);
+  font-family: $text-style-mobile;
+  font-size: 10px;
+  right: 6%;
+  top: 0.5%;
+}
+.network {
+  position: absolute;
+  top: 0.5%;
+  right: 19%;
+  width: 3.8%;
+  height: 2.5%;
+  background:  color-all(white-color);
+  -webkit-clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+  clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+}
+.four-g {
+  position: absolute;
+  right: 25%;
+  top: 0.8%;
+  background: color-all(white-color);
+  width: 11%;
+  height: 2.2%;
+}
+.four-g:before {
+  position: absolute;
+  content: 'VoLTE';
+  color: color-contact(four-g-color);
+  font-family: $text-style-mobile;
+  font-size: 8px;
+  right: 10%;
+  top: 1%;
+}
+.arrow {
+  position: absolute;
+  height: 2%;
+  width: 4%;
+  z-index: 2;
+  top: 78%;
+  left: 49%;
+  transform: rotate(224deg);
+  border-style: solid;
+  border-color: color-all(white-color);
+  border-width: 0px 2px 2px 0px;
+}
+// Contact Me section and Icons
+.contact-me-window {
+  position: absolute;
+  width: 80%;
+  height: 7%;
+  background: color-contact(inner-window);
+  left: 10%;
+  top: 40%;
+  border-radius: 30px;
+}
+.contact-me-window:after {
+  position: absolute;
+  content: 'CONTACT ME';
+  font-weight: bold;
+  color: color-contact(four-g-color);
+  font-family: $text-style-mobile;
+  font-size: 18px;
+  left: 10%;
+  top: 18%;
+}
+.fa-paper-plane {
+  position: absolute;
+  color: color-contact(four-g-color);
+  font-size: 18px;
+  top: 18.5%;
+  left: 78%;
+}
+.icon {
+  position: absolute;
+  color: color-contact(four-g-color);
+  font-size: 30px;
+  top: 150%;
+}
+.icon-one {
+  left: 10%;
+}
+.icon-two {
+  left: 30%;
+}
+.icon-three {
+  left: 50%;
+}
+.icon-four {
+  left: 70%;
+}
+// Volume Key, Power Key and Silent toggler Key of Mobile
+.volume-key {
+  position: absolute;
+  width: 2%;
+  height: 13%;
+  background: color-contact(my-mobile);
+  left: 11.5%;
+  top: 20%;
+  border-radius: 50px;
+  z-index: -1;
+  border: 1px solid color-all(black-color);
+}
+.silent-toggler {
+  position: absolute;
+  width: 2%;
+  height: 8%;
+  background: color-contact(my-mobile);
+  right: 7.2%;
+  top: 15%;
+  border-radius: 50px;
+  z-index: -1;
+  border: 1px solid color-all(black-color);
+}
+.power-button {
+  position: absolute;
+  width: 2%;
+  height: 10%;
+  background: color-contact(my-mobile);
+  right: 7.2%;
+  top: 29%;
+  z-index: -1;
+  border: 1px solid color-all(black-color);
+  border-radius: 50px;
+}
+
+// Keyframes for animations used
+@keyframes loading {
+  0% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+  50% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  100% {
+    opacity: 0.2;
+    transform: translateY(-20px);
+  }
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(5deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}

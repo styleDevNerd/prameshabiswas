@@ -1,0 +1,192 @@
+@import 'config';
+@import 'maincomponent';
+@import 'about';
+@import 'projects';
+@import 'contact';
+
+html {
+  scroll-behavior: smooth;
+}
+// Body
+body {
+  background: color-all(bg-color);
+  margin: 0;
+  padding: 0;
+  font-family: $text-style-one;
+
+  // Navigation Bar
+  nav {
+    color: color-all(pastel-violet);
+    margin: auto;
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+
+    // Characters Like - < />
+    span {
+      color: color-contact(camera);
+    }
+  }
+
+  // Main Content - Container
+  .container {
+    min-width: 1392px;
+    width: 100vw;
+    height: 100vh;
+    background: none;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    // Left Section
+    .left {
+      flex: 1;
+    }
+    // Right Section
+    .right {
+      flex: 1;
+    }
+  }
+}
+
+nav div {
+    padding: 20px;
+}
+nav a {
+  color: color-about(light-grey);
+  padding: 10px;
+  position: relative;
+  text-transform: uppercase;
+  margin-left: 25px;
+  text-decoration: none;
+  justify-content: space-around;
+  font-weight: bold;
+}
+nav a::after{
+  content: '';
+  border-bottom: 3px dotted color-main(top);
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transform: translateY(10px) scale(1.2);
+  transition: transform 0.3s ease;
+  height: 100%;
+  width: 100%;
+}
+nav a:hover::after{
+  transform: translateY(0);
+  opacity: 1;
+}
+
+// Navigation Bar - Codepen Icon
+nav .special-link .fa-codepen {
+  padding: 5px;  
+  justify-content: flex-end;
+  font-size: 1.6rem;
+}
+// Active Hyperlink
+.active {
+  padding: 8px 15px;
+  width: 60px;
+  height: 20px;
+  color: color-all(pastel-violet);
+  font-weight: bold;
+  border-bottom: 3px dotted color-main(top);
+}
+
+// My Name Section
+.myname {
+  position: relative;
+  width: 70%;
+  margin-left: 15%;
+  margin-bottom: 18%;
+  top: 22%;
+  font-size: 4rem;
+  font-family: $text-style-three;
+  color: color-all(white-color);
+}
+.special {
+  font-family: $text-style-two;
+  color: color-all(pastel-violet);
+  margin-left: 15%;
+  margin-bottom: 2%;
+  font-size: 6rem;
+  font-weight: 400;
+  letter-spacing: 8px;
+  animation: bounceIn 2s forwards;
+}
+.one-liner {
+  margin-top: -40px;
+  margin-bottom: 15px;
+  height: 5%;
+  font-size: 3rem;
+  border-bottom: 3px dotted color-all(pastel-violet);
+}
+h4 {
+  position: relative;
+  margin-left: 15%;
+  font-size: 1.5rem;
+  font-weight: 400;
+  letter-spacing: 2px;
+  font-family: $text-style-three;
+  color: color-all(white-color);
+}
+// Social Section
+.social-icons {
+  padding: 10px;
+}
+.social-ul{
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+}
+.social-ul li {
+  font-size: 2.6rem;
+}
+.social-ul a{
+  display: inline-flex;
+  text-decoration: none;
+  width: 50px;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+  margin: 5px 10px;
+}
+.fa-codepen:hover,
+.fa-github:hover,
+.fa-linkedin:hover,
+.fa-twitter:hover {
+  color: color-all(pastel-violet);
+  transform: scale(1.2);
+}
+.fa-twitter,
+.fa-codepen,
+.fa-linkedin,
+.fa-github {
+  color: color-all(white-color);
+}
+// Footer
+footer {
+  position: absolute;
+  position: fixed;
+  right: -5%;
+  bottom: 20%;
+  transform: rotate(90deg);
+  color: color-about(light-grey);
+
+  .fa-heart {
+    color: color-about(tomato-red);
+  }
+  .fa-code {
+    color: color-all(white-color);
+  }
+}
